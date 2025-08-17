@@ -1,0 +1,16 @@
+{
+  "name": "@workspace/eslint-config",
+  "version": "0.0.1",
+  "private": true,
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "next.js",
+    "node.js"
+  ],
+  "dependencies": {
+    "eslint": "catalog:",
+    "@typescript-eslint/eslint-plugin": "^8.14.0",
+    "@typescript-eslint/parser": "^8.14.0"
+  }
+}
