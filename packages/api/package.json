@@ -1,0 +1,33 @@
+{
+  "name": "@workspace/api",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "build": "bun build src/index.ts --outdir dist --target node",
+    "start": "bun dist/index.js",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@trpc/server": "11.4.3",
+    "@workspace/db": "workspace:*",
+    "cors": "^2.8.5",
+    "express": "5.0.1",
+    "socket.io": "4.8.0",
+    "zod": "4.0.16",
+    "bcryptjs": "3.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "nanoid": "^5.0.8"
+  },
+  "devDependencies": {
+    "@workspace/typescript-config": "workspace:*",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "24.2.1",
+    "typescript": "5.8.3"
+  }
+}
